@@ -3,26 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hiragino+Sans:wght@400;700&display=swap">
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/1d36032b-ba73-425d-b9c0-043bcd0df707/webchat/config.js" defer></script>
-    <title>Billie Bot</title>
+
     <style>
         body {
-            background-color: #B8D356;
+            background-color: #F4EDDE;
             margin: 0;
+            padding: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
+
         }
 
-        h1 {
+        #container {
             text-align: center;
-            color: #FFFFFF; /* Text color, adjust as needed */
+            margin-right: 25%;
+        }
+
+        #bilie {
+            font-size: 100px;
+            font-weight: bold;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        #bot {
+            font-weight: normal;
+        }
+
+        #fachabitat {
+            font-size: 50px;
+            font-weight: normal;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        #habitat {
+            font-weight: bold;
         }
     </style>
+    <title>BilieBot facHabitat</title>
 </head>
 <body>
-    <h1>Billie Bot</h1>
+    <div id="container">
+        <div id="bilie">Billie<span id="bot">Bot</span></div>
+        <div id="fachabitat">fac<span id="habitat">Habitat</span></div>
+    </div>
 </body>
 </html>
