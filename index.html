@@ -9,14 +9,13 @@
 
     <style>
         body {
-            background-color: #F4EDDE;
+            background-color: rgba(244, 237, 222, 0.50);
             margin: 0;
             padding: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
-
         }
 
         #container {
@@ -25,7 +24,7 @@
         }
 
         #bilie {
-            font-size: 100px;
+            font-size: 100px; /* Taille ajustée pour les écrans plus petits */
             font-weight: bold;
             font-family: 'Hiragino Sans', sans-serif;
         }
@@ -35,13 +34,38 @@
         }
 
         #fachabitat {
-            font-size: 50px;
+            font-size: 50px; /* Taille ajustée pour les écrans plus petits */
             font-weight: normal;
             font-family: 'Hiragino Sans', sans-serif;
         }
 
         #habitat {
             font-weight: bold;
+        }
+
+        /* Ajout de media queries pour les tablettes et les téléphones */
+        @media only screen and (max-width: 768px) {
+            #bilie {
+                font-size: 40px;
+            }
+
+            #fachabitat {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            #bilie {
+                font-size: 30px;
+            }
+
+            #fachabitat {
+                font-size: 15px;
+            }
+
+            #container {
+                margin-right: 10px; 
+            }
         }
     </style>
     <title>BilieBot facHabitat</title>
